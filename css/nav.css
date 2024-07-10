@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+}
+#dark {
+  background-color: black;
+  border: none;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#dark:hover {
+  box-shadow: 2px 0px 20px 5px black, 1px 1px 20px 10px black;
+  /* padding: 15px; */
+  transition: all 0.9s ease;
+  border-radius: 15px;
+  transform: scale(1.1);
+}
+
+.darktext {
+  color: black;
+}
+::selection {
+  color: rgba(225, 107, 90, 255);
+  background: white;
+}
+.flex {
+  display: flex;
+}
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.desktop-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: rgba(225, 107, 90, 255);
+  height: 55px;
+}
+.left {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.right ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+.right ul li {
+  list-style: none;
+  padding-left: 15px;
+}
+.right ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: gray;
+}
+.right ul li a:hover {
+  color: rgba(225, 107, 90, 255);
+}
+.left:hover {
+  cursor: default;
+}
+hr {
+  /* width: 100%; */
+  border: 2px solid black;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .desktop-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: rgba(225, 107, 90, 255);
+    color: black;
+    height: 20vh;
+  }
+  .right ul li a {
+    /* text-decoration: none; */
+    /* font-size: 15px; */
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 500px) {
+  .desktop-nav {
+    display: none;
+  }
+  /* Mobile Navigation */
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(225, 107, 90, 255);
+    padding: 10px;
+  }
+
+  .left-mob {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .right-mob {
+    /* width: 100%; */
+    text-align: center;
+  }
+
+  .right-mob ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .right-mob ul li {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .right-mob ul li img.mob-img {
+    cursor: pointer;
+    display: block;
+  }
+
+  .mob-dropdown {
+    position: absolute;
+    background-color: rgba(225, 107, 90, 255);
+    width: 150px;
+    right: 0px;
+    /* text-align: left; */
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+  }
+
+  .mob-dropdown li {
+    padding: 10px;
+  }
+
+  .mob-dropdown li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .right-mob ul li:hover .mob-dropdown {
+    visibility: visible;
+    opacity: 1;
+  }
+}

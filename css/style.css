@@ -1,0 +1,271 @@
+/* ----------------------------------------- FIRST SECTION ---------------------------------------------------- */
+
+.first_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.first_section_left {
+  width: 43%;
+  padding: 80px;
+}
+#cv {
+  margin-top: 10px;
+  background-color: rgba(225, 107, 90, 255);
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+#cv:hover {
+  transition: all 0.9s ease;
+  box-shadow: 2px 0px 20px 5px rgba(225, 107, 90, 255),
+    1px 1px 20px 10px rgba(225, 107, 90, 255);
+  border-radius: 15px;
+  transform: scale(1.1);
+}
+#cv a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.first_section_right {
+  width: 40%;
+}
+.img {
+  /* padding-top: 32px; */
+  width: 400px;
+  transition: transform 0.5s;
+}
+.first_text {
+  font-size: 35px;
+}
+.first_font {
+  color: rgba(225, 107, 90, 255);
+}
+.first_section_right img:hover {
+  transform: scale(1.1);
+}
+/* ----------------------------------------- ABOUT SECTION ---------------------------------------------------- */
+
+.about {
+  background-color: rgba(225, 107, 90, 255);
+  color: rgb(29, 27, 27);
+  margin: 50px;
+  letter-spacing: 2px;
+  padding: 30px;
+  /* border-radius: 20px; */
+}
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
+.profile_left {
+  /* width: 20%; */
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px;
+}
+.profile_left img {
+  width: 250px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.profile_right {
+  width: 60%;
+  font-size: 20px;
+}
+.profile_left img:hover {
+  transform: scale(1.1);
+}
+/* ----------------------------------------- SKILL SECTION ---------------------------------------------------- */
+
+.skill {
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+.skill ul li {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.image {
+  width: 30px;
+  padding-right: 20px;
+}
+.skills-head {
+  font-size: 20px;
+}
+.skills {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d8c9c6;
+  width: 200px;
+  padding: 20px;
+  transition: transform 0.5s;
+  margin: 20px;
+  /* border-radius: 10px; */
+}
+.card:hover {
+  transform: scale(1.1);
+}
+/* ----------------------------------------- PROJECT SECTION ---------------------------------------------------- */
+
+.projects {
+  /* border-radius: 20px; */
+  margin: 50px;
+  background-color: rgba(225, 107, 90, 255);
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.pro-list {
+  padding: 20px;
+}
+.pro-list h3 {
+  font-size: 20px;
+  padding-left: 20px;
+  letter-spacing: 2px;
+}
+.des {
+  padding-left: 25px;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.pro-list button {
+  margin-left: 25px;
+  margin-top: 10px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+}
+.pro-list button:hover {
+  background-color: black;
+}
+.pro-list button a:hover {
+  color: white;
+}
+.pro-list button a {
+  text-decoration: none;
+  color: black;
+}
+/* ----------------------------------------- FOOTER SECTION ---------------------------------------------------- */
+
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 50px 0px 50px;
+}
+.links ul li {
+  list-style: none;
+  padding-bottom: 5px;
+}
+.links ul li a {
+  text-decoration: none;
+  color: white;
+}
+.contact div span {
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin-left: 15px;
+}
+.map {
+  padding: 20px;
+}
+/* -----------------------------------------RESPONSIVE (MAX WIDTH 1200PX) SECTION ---------------------------------------------------- */
+
+@media screen and (max-width: 1200px) {
+  footer {
+    flex-direction: column;
+    margin: 50px;
+  }
+  footer div {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+/* ----------------------------------------- RESPONSIVE (MAX WIDTH 800PX) SECTION ---------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+  .profile {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .first_section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .first_section_left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+  .first_section_right {
+    width: 100%;
+  }
+  .first_section_right {
+    display: flex;
+    justify-content: center;
+  }
+  .img {
+    padding-top: 1px;
+    width: 50%;
+  }
+  .first_text {
+    font-size: 20px;
+  }
+  .profile_right {
+    width: 81%;
+    font-size: 15px;
+  }
+  .profile_left {
+    padding: 0px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile_left img {
+    width: 200px;
+    padding: 2px 0px 10px;
+    object-fit: contain;
+  }
+  .about {
+    margin: 0px;
+  }
+
+  .projects {
+    /* border-radius: 20px; */
+    margin: 0px;
+  }
+  footer {
+    margin: 0px;
+  }
+}
